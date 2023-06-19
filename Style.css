@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: #5e5e5e;
+    background: radial-gradient(circle, rgba(126,126,126,1) 0%, rgba(87,87,87,1) 35%, rgba(56,56,56,1) 100%);
 }
 /*!
 =================================================================================================================================
@@ -22,8 +22,6 @@ header{
     height: 100vh;
     width: 100vw;
     max-width: 100%;
-    background: rgb(126,126,126);
-    background: radial-gradient(circle, rgba(126,126,126,1) 0%, rgba(87,87,87,1) 35%, rgba(56,56,56,1) 100%);
   
 }
 
@@ -63,13 +61,19 @@ header h1 a {
     color: #D4ADFC;
 }
 
+.fa-2x:hover{
+    filter: drop-shadow(0 0 1.5rem #D4ADFC);
+    transition: all 0.4s ease-in-out;
+}
+
 .header{
     height: 70vh;
     width: 90vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    margin: 20px auto;
+    margin: auto;
+    padding: 20px 0;
     overflow: hidden;
 }
 
@@ -151,4 +155,67 @@ header h1 a {
 
 div.mon-img{
     filter: drop-shadow(0 0 1.5rem #D4ADFC);
+}
+
+
+/*!
+=================================================================================================================================
+     *COMPÉTENCES
+=================================================================================================================================
+*/
+.compétenses{
+    height: 60vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mescompétenses{
+    height: 80%;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.lot{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cmt1{
+    background-color: rgba(0, 0, 0, 0.144);
+    height: 20vh;
+    width: 18vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s linear ;
+    cursor: none;
+}
+
+.cmt1:hover{
+    background-color: #9e71cb2d;
+    filter: drop-shadow(0 0 2rem white);
+}
+.lot h2{
+    color:white;
+    font-size: 2.3vw;
+}
+
+.lot p{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
 }
