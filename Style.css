@@ -34,6 +34,9 @@ header {
     align-items: center;
     justify-content: space-evenly;
     margin: auto;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: appartirion 0.4s 1.6s ease-out forwards;
 }
 
 .navbar h1 {
@@ -41,10 +44,12 @@ header {
     margin: auto;
     font-size: 3vw;
     width: 70%;
+
 }
 
 header span {
     color: white;
+    display: inline-block;
 }
 
 header h1 a {
@@ -66,6 +71,14 @@ header h1 a {
 .fa-2x:hover {
     filter: drop-shadow(0 0 1.5rem #D4ADFC);
     transition: all 0.4s ease-in-out;
+}
+
+@keyframes appartirion {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+
 }
 
 .header {
@@ -102,6 +115,18 @@ header h1 a {
     font-size: 5vw;
 }
 
+.mon-txt :nth-child(1) {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: appartirion 0.8s 0.2s ease-out forwards;
+}
+
+.mon-txt :nth-child(2) {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: appartirion 0.8s 0.4s ease-out forwards;
+}
+
 .mon-txt h1 span {
     text-decoration: underline #D4ADFC;
     text-decoration-skip-ink: 10px;
@@ -112,6 +137,9 @@ header h1 a {
 .mon-txt p {
     margin: 15px 0 60px 0;
     width: 80%;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: appartirion 0.8s 0.6s ease-out forwards;
 }
 
 .contacte {
@@ -135,6 +163,9 @@ header h1 a {
     transition: 0.6s;
     box-shadow: 0px 0px 30px #5e5e5e;
     -webkit-box-reflect: below 10px linear-gradient(to bottom, #D4ADFC, #9e71cb);
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: appartirion 0.8s 0.8s ease-out forwards;
 }
 
 .btn:active {
@@ -154,11 +185,15 @@ header h1 a {
     width: 40%;
     height: 100%;
     max-width: 100%;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: appartirion 0.8s 0.10s ease-out forwards;
 }
 
 div.mon-img {
     filter: drop-shadow(0 0 1.5rem #D4ADFC);
 }
+
 
 
 /*!
